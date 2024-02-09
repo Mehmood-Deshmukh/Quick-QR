@@ -9,16 +9,19 @@ const QRCodeGenerator = () => {
 
   const generateQRCode = () => {
     setIsGenerating(true);
-    try {
-      const canvas = document.getElementById('qr-canvas');
-      const dataURL = canvas.toDataURL('image/png');
-      setDownloadLink(dataURL);
-      setIsGenerating(false);
-    } catch (error) {
-      console.error('Error generating QR code:', error);
-      setIsGenerating(false);
-    }
+    setTimeout(() => {
+      try {
+        const canvas = document.getElementById('qr-canvas');
+        const dataURL = canvas.toDataURL('image/png');
+        setDownloadLink(dataURL);
+        setIsGenerating(false);
+      } catch (error) {
+        console.error('Error generating QR code:', error);
+        setIsGenerating(false);
+      }
+    }, 1000);
   };
+ 
 
   const handleDownload = () => {
     const link = document.createElement('a');

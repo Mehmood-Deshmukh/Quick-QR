@@ -3,7 +3,6 @@
 }
 
 input[type='text'] {
-  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: none;
@@ -66,7 +65,7 @@ input[type=file]::file-selector-button:hover {
 
 
 button {
-  background-color: #1c109f;
+  background-color: #4e54c8;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -76,11 +75,11 @@ button {
 }
 
 button:hover {
-  background-color: #3f5dd6;
+  background-color: #8f94fb;
 }
 
 button.generating {
-  background-color: #3a8dd2;
+  background-color: #4e54c8;
   pointer-events: none;
 }
 
@@ -99,7 +98,7 @@ button.generating {
 
 .download-button {
   margin-top: 20px;
-  background-color: #63cdda;
+  background-color: #4e54c8;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -110,7 +109,7 @@ button.generating {
 }
 
 .download-button:hover {
-  background-color: #4e8ac7;
+  background-color: #8f94fb;
 }
 
 .customization {
@@ -123,4 +122,8 @@ button.generating {
   display: flex;
   justify-content: space-between;
   margin: .3em 0;
+}
+
+.customization>div>label{
+  margin-top: .8vh;
 }

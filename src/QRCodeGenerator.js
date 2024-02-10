@@ -92,9 +92,9 @@ const QRCodeGenerator = () => {
             onChange={(e) => setFgColor(e.target.value)}
           />
         </div>
-        <div>
-        <label htmlFor="logo" style={{ display: 'inline-block', marginBottom: '8px', cursor: 'pointer' }}>
-        <span style={{ backgroundColor: '#3f5dd6', color: '#fff', padding: '4px 8px', borderRadius: '10px' }}>Upload Logo</span>
+        <div className="logoContainer">
+        <label htmlFor="logo" style={{ display: 'inline-block', marginBottom: '12px', cursor: 'pointer' }}>
+        <span style={{ backgroundColor: '#8f94fb', color: '#fff', padding: '8px 16px', borderRadius: '10px' }}>Upload Logo</span>
         <input type="file" id="logo" onChange={handleFileChange} style={{ display: 'none' }} />
       </label>
         </div>

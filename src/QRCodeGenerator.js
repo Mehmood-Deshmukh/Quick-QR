@@ -113,11 +113,13 @@ const QRCodeGenerator = () => {
             size={size}
             bgColor={bgColor}
             fgColor={fgColor}
+            level="H"
             includeMargin={true}
             imageSettings={{
               src: fileSrc,
               height: 40,
-              width : 40
+              width : 40,
+              excavate:true
             }}
           />
         )}

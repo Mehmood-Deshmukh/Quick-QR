@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import QRCode from 'qrcode.react';
 import jsPDF from 'jspdf';
 import './QRCodeGenerator.css';
+import { Margin } from 'react-to-pdf';
 
 const QRCodeGenerator = () => {
   const [qrData, setQRData] = useState('');
@@ -35,16 +36,9 @@ const QRCodeGenerator = () => {
   const handleDownloadPDF = () => {
     const canvas = document.getElementById('qr-canvas');
     const imgData = canvas.toDataURL('image/png');
-  
+
     const doc = new jsPDF();
-    const pageWidth = doc.internal.pageSize.width;
-    const pageHeight = doc.internal.pageSize.height;
-  
-    const qrCodeSize = canvas.width;
-    const qrCodeX = (pageWidth - qrCodeSize) / 2;
-    const qrCodeY = (pageHeight - qrCodeSize) / 2;
-  
-    doc.addImage(imgData, 'PNG', qrCodeX, qrCodeY, qrCodeSize, qrCodeSize);
+    doc.addImage(imgData, 'PNG', 10, 10);
     doc.save('qrcode.pdf');
   };
 

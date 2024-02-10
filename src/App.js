@@ -18,6 +18,7 @@ function App() {
         <li></li>
       </ul>
       <h1>Quick QR</h1>
+      <h6>Generate, Customize, and Share Your QR Codes Effortlessly!</h6>
       <QRCodeGenerator />
     </div>
   );

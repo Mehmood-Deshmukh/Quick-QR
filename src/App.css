@@ -164,3 +164,10 @@ h1{
     text-shadow: 0 0 3px #ffffff, 0 0 5px #000000; 
     color:white;
 }
+
+h6{
+    color:white;
+    text-align: center;
+    margin-bottom: 2vh;
+
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import QRCode from 'qrcode.react';
+import jsPDF from 'jspdf';
 import './QRCodeGenerator.css';
 
 const QRCodeGenerator = () => {
@@ -21,15 +22,30 @@ const QRCodeGenerator = () => {
       }
     }, 1000);
   };
- 
 
-  const handleDownload = () => {
+  const handleDownloadPNG = () => {
     const link = document.createElement('a');
     link.download = 'qrcode.png';
     link.href = downloadLink;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const handleDownloadPDF = () => {
+    const canvas = document.getElementById('qr-canvas');
+    const imgData = canvas.toDataURL('image/png');
+  
+    const doc = new jsPDF();
+    const pageWidth = doc.internal.pageSize.width;
+    const pageHeight = doc.internal.pageSize.height;
+  
+    const qrCodeSize = canvas.width;
+    const qrCodeX = (pageWidth - qrCodeSize) / 2;
+    const qrCodeY = (pageHeight - qrCodeSize) / 2;
+  
+    doc.addImage(imgData, 'PNG', qrCodeX, qrCodeY, qrCodeSize, qrCodeSize);
+    doc.save('qrcode.pdf');
   };
 
   return (
@@ -47,9 +63,14 @@ const QRCodeGenerator = () => {
         {qrData && <QRCode value={qrData} id="qr-canvas" />}
       </div>
       {downloadLink && (
-        <button onClick={handleDownload} className="download-button">
-          Download QR Code
-        </button>
+        <div className="download-buttons">
+          <button onClick={handleDownloadPNG} className="download-button">
+            Download PNG
+          </button>
+          <button onClick={handleDownloadPDF} className="download-button">
+            Download PDF
+          </button>
+        </div>
       )}
     </div>
   );

@@ -45,7 +45,7 @@ Quick QR is a simple and user-friendly web application built using React that al
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
--   If you have suggestions for adding or removing features, feel free to [open an issue](https://github.com/Mehmood-Deshmukh/NoteMingle/issues/new) to discuss it, or directly create a pull request with necessary changes.
+-   If you have suggestions for adding or removing features, feel free to [open an issue](https://github.com/Mehmood-Deshmukh/QR-code-generator/issues/new) to discuss it, or directly create a pull request with necessary changes.
 -   Create individual PR for each suggestion.
 
 ### Creating A Pull Request

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0px;
     padding: 0px;
 }
 
 body{
-    font-family: 'Exo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -153,8 +153,14 @@ body{
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 25vw;
 }
 
 h1{
-  color: #fff;
+    font-family: 'Black Ops One', cursive;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #000000; 
+    color:white;
 }

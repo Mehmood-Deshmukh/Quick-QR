@@ -17,7 +17,7 @@ function App() {
         <li></li>
         <li></li>
       </ul>
-      <h1>QR Code Generator</h1>
+      <h1>Quick QR</h1>
       <QRCodeGenerator />
     </div>
   );

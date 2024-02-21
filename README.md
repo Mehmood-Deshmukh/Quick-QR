@@ -4,13 +4,13 @@ Quick QR is a simple and user-friendly web application built using React that al
 
 ## Features
 
--Generate QR codes quickly and easily.
+- Generate QR codes quickly and easily.
 
--Customize background and foreground colors to match your preferences or branding.
+- Customize background and foreground colors to match your preferences or branding.
 
--Add custom logos to your QR code for personalization.
+- Add custom logos to your QR code for personalization.
 
--Download QR codes as PDF or PNG files for easy sharing and printing.
+- Download QR codes as PDF or PNG files for easy sharing and printing.
 
 ## Technologies Used
 - **React.js:** A JavaScript library for building dynamic user interfaces.
